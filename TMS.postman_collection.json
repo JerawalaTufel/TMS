@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "2cb55f51-ed04-493b-8f56-6c7b79fdd5f3",
+		"name": "TMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21607046",
+		"_collection_link": "https://blue-space-118440.postman.co/workspace/New-Team-Workspace~46b97068-174a-4d38-96ba-71b8271e719d/collection/21607046-2cb55f51-ed04-493b-8f56-6c7b79fdd5f3?action=share&source=collection_link&creator=21607046"
+	},
+	"item": [
+		{
+			"name": "CREATE-TASK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"task-6\",\n    \"type\" : 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BAS_URL}}create-task",
+					"host": [
+						"{{BAS_URL}}create-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-TASK",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BAS_URL}}delete-task/65d48c472be3027c60629c65",
+					"host": [
+						"{{BAS_URL}}delete-task"
+					],
+					"path": [
+						"65d48c472be3027c60629c65"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD-INFO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : \"65d48c482be3027c60629c69\",\n    \"desc\" : \"this is my first task.\",\n    \"comment\" : \"ok fine!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BAS_URL}}add-info",
+					"host": [
+						"{{BAS_URL}}add-info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIST_TASK",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BAS_URL}}list-task",
+					"host": [
+						"{{BAS_URL}}list-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MOVE-TASK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : \"65d48c4b2be3027c60629c71\",\n    \"type\" : 2,\n    \"up_position\" : 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BAS_URL}}move-task",
+					"host": [
+						"{{BAS_URL}}move-task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TYPE-LIST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BAS_URL}}type-list",
+					"host": [
+						"{{BAS_URL}}type-list"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "BAS_URL",
+			"value": "http://localhost:3000/"
+		}
+	]
+}
