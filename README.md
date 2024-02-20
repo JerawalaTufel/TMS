@@ -24,7 +24,7 @@ These instructions will help you set up and run the project on your local machin
 4. To start the application, run the following command:
     ```bash
     npm start
-5.  The file given in the project with the name c is the postman collection.
+5.  We have provide postman collection within the project. You can use it as reference for the API Request and Response.
 Import it in your postman for api API examples.
     ``` 
     'TMS/TMS.postman_collection.json'
